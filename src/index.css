@@ -1,0 +1,127 @@
+q:root{
+	--mainWhite: #ffffff;
+	
+}
+
+.container{
+	max-width:100%;
+	height:150px;
+	position:fixed;
+	font-family: 'Oswald', sans-serif;
+	color:white;
+	z-index:2;
+}
+
+.content{
+	max-width:100%;
+	max-height:60;
+	position:fixed;
+	font-family: 'Oswald', sans-serif;
+	color:white;
+}
+
+.title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 60px;
+    top:40px;
+    left:40px;
+    margin:0;
+    background: -webkit-linear-gradient(#d07ae6, rgb(106, 82, 212));
+    -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+    font-weight: 900;
+     text-shadow: 4px 4px;
+    text-decoration: none;
+    color:white;
+    padding:0;
+    text-decoration:none;
+    z-index:1;
+    float:left;
+    position:fixed;
+    
+  }	
+.nav{
+	left:80%;
+	position:absolute;
+	top:0px;
+	z-index:10;
+}
+
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 0; 
+    }
+  
+  li {
+  display: inline;
+  list-style-type: none;
+  margin: 10;
+  
+}
+  
+  li a {
+  font-weight: 200;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  font-size:18px;
+  color: #a10ac7;
+    
+  }
+  
+  li a:hover {
+    color: blue;
+    text-decoration: none;
+  }
+  li:last-child {
+    border-right: none;
+  }
+
+/* ---- particles.js container ---- */ 
+
+.particle-container{
+	height: 100%;
+ 	width: 100%;
+  	position: fixed; 
+}
+
+/* ---- typewriter ---- */ 
+.p {
+    color: #00FF41;
+    font-family: 'Courier New', Courier, monospace;
+	font-size: 20px;
+	}
+.line {
+    position: relative;
+    border-right: 4px solid rgb(0, 255, 64);
+    width: 330px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.typing {
+    animation: typewriter 3s steps(25) 1s 1 normal both,
+    blinkCursor 0.6s steps(12) infinite normal;
+}
+    
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 400px;
+    }
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: #a10ac7;
+    }
+
+    to {
+        border-right-color: white;
+    }
+}
+
